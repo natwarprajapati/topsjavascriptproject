@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONEY COUNTER</title>
+    <style>
+        table{
+            border: 1px solid black;
+            padding: 10px 100px 10px 100px;
+            margin: 0 auto;
+            width: 1000px;
+            font-weight: bold;
+            font-size: larger;
+            
+        }
+        th,td{
+            padding: 10px;
+            width: 150px;
+        }
+        img{
+            height: 50px;
+            width: 80px;
+        }
+        h2{
+            text-align: center;
+        }
+        input[type="number"]{
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 10px;
+            font-size: medium;
+            background-color: rgba(207, 248, 168, 0.981) !important;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2> MONEY COUNTER </h2>
+    <table>
+        <tr>
+            <td>2000 </td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3-QTfhjVnIoYtilKrq7fB6RFoRB-2VIZ-vXw76epRTg&s" alt=""></td>
+            <td ><input type="number" id="one" onkeyup="a()" ></td><td id="two">0</td>
+        </tr>
+       
+        <tr>
+            <td>1000</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD0xhgQs-u1yWintMT0mk2qEACuiW8_Qt4Dicfk4djBw&s" alt=""></td>
+            <td><input type="number" id="three" onkeyup="a()"></td>
+            <td id="four">0</td>
+        </tr>
+        <tr>
+            <td>500</td>
+            <td><img src="https://w7.pngwing.com/pngs/971/900/png-transparent-indian-currency-of-500-rupees.png" alt=""></td>
+            <td><input type="number" id="five" onkeyup="a()"></td>
+            <td id="six">0</td>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/India%2C_200_INR%2C_2018%2C_obverse.jpg" alt=""></td>
+            <td><input type="number" id="sevn" onkeyup="a()"></td>
+            <td id="eght">0</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRll48R61HJsaB5apRYudwd_6307-fv_c3rlGkTvqkjyQ&s" alt=""></td>
+            <td><input type="number" id="seven" onkeyup="a()"></td>
+            <td id="eight">0</td>
+            
+        </tr>
+        <tr>
+            <td>50</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaigj35jc8qZOqwoFpYuFMqg07QW7nkJc8X2eCoyHUrA&s" alt=""></td>
+            <td><input type="number" id="nine" onkeyup="a()"></td>
+            <td id="ten">0</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzJroN5__lEf7vsMbt2wop23ALpg06_xrsyHO9-Mfz9Q&s" alt=""></td>
+            <td><input type="number" id="eleven" onkeyup="a()"></td>
+            <td id="twelve">0</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5WfjA8ozUNykVt1A2XaMxbcomzXtq1Sisu3j7om065w&s" alt=""></td>
+            <td><input type="number" id="thirteen" onkeyup="a()"></td>
+            <td id="fourteen">0</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td><img src="https://www.pngkey.com/png/detail/172-1721042_rupee-coin-png-5-rupee-coin-png.png" alt=""></td>
+            <td><input type="number" id="fifteen" onkeyup="a()"></td>
+            <td id="sixteen">0</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td><img src="https://banknotecoinstamp.com/cdn/shop/products/304_b40673aa-54c9-47b4-8aa5-5e4800f539e2_1024x1024.jpg?v=1674642516" alt=""></td>
+            <td><input type="number" id="seventeen" onkeyup="a()"></td>
+            <td id="eighteen">0</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td><img src="https://thumbs.dreamstime.com/b/india-one-rupee-coin-white-isolated-background-210995660.jpg" alt=""></td>
+            <td><input type="number" id="nineteen" onkeyup="a()"></td>
+            <td id="twenty">0</td>
+        </tr>
+        <tr>
+            <td colspan="3">TOTAL</td>
+            <td  id="total" onkeyup="a()"></td>
+            
+        </tr>
+        
+    </table>
+    <script>
+        
+        function a() {
+        var n1=document.getElementById("one").value
+        // console.log(typeof parseInt(n1))
+      //  console.log(typeof document.getElementById("one").value)
+        var r1=document.getElementById("two").innerHTML=2000*n1
+
+        var n2=document.getElementById("three").value
+        var r2=document.getElementById("four").innerHTML=1000*n2
+
+        var n3=document.getElementById("five").value
+        var r3=document.getElementById("six").innerHTML=500*n3
+
+        var n4=document.getElementById("sevn").value
+        var r4=document.getElementById("eght").innerHTML=200*n4
+
+        var n5=document.getElementById("seven").value
+        var r5=document.getElementById("eight").innerHTML=100*n5
+
+        var n6=document.getElementById("nine").value
+        var r6=document.getElementById("ten").innerHTML=50*n6
+
+        var n7=document.getElementById("eleven").value
+        var r7=document.getElementById("twelve").innerHTML=20*n7
+
+        var n8=document.getElementById("thirteen").value
+        var r8=document.getElementById("fourteen").innerHTML=10*n8
+
+        var n9=document.getElementById("fifteen").value
+        var r9=document.getElementById("sixteen").innerHTML=5*n9
+
+        var n10=document.getElementById("seventeen").value
+        var r10=document.getElementById("eighteen").innerHTML=2*n10
+
+        var n11=document.getElementById("nineteen").value
+        var r11=document.getElementById("twenty").innerHTML=1*n11
+
+
+        
+        
+
+        var r5=document.getElementById("total").innerHTML= r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11
+
+        }
+    
+    
+
+    </script>
+</body>
+</html>
